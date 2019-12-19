@@ -1,0 +1,91 @@
+{
+    "name": "AMEE",
+    "description": "Data driven solutions to strengthen supply chain performance and risk.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/335-amee-developers.jpg",
+    "tags": [
+        "api provider",
+        "business",
+        "carbon",
+        "cleantech",
+        "cleanweb",
+        "general data",
+        "have api"
+    ],
+    "created": "2019-12-18",
+    "modified": "2019-12-18",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/amee\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "AMEE ND-Gain Indices API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/335-amee-developers.jpg",
+            "humanURL": "https:\/\/www.amee.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/amee-ndgain-indices-api-openapi.json"
+                }
+            ]
+        },
+        {
+            "name": "AMEE WRI Aqueduct API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/335-amee-developers.jpg",
+            "humanURL": "https:\/\/www.amee.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/amee-wri-aqueduct-api-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "http:\/\/www.amee.com\/blog\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/blog.amee.com\/feed\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/amee"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/amee"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/www.amee.com\/api"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/www.amee.com\/api"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/AMEE"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/ameedev"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/ameeHQ"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.amee.com"
+        }
+    ]
+}
