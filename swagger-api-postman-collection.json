@@ -1,0 +1,326 @@
+{
+    "id": "f39eb3116964136c907633e5f062d902",
+    "name": "Swagger API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "3ab73598f820bb9ce274fce6b2c5fe84",
+            "name": "getCompanies",
+            "url": "https:\/\/www.amee.com\/companies",
+            "description": "Search for companies based on a number of parameters",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "limit",
+                    "description": "Number of results per page, max 50, default 20",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page number of results, max 100, default 1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "company_name",
+                    "description": "Fuzzy search on company_name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "gup_amee_company_id",
+                    "description": "Search on companies with same parent",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "is_gup",
+                    "description": "Filters for parent companies",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "city",
+                    "description": "Exact search on city",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "postcode",
+                    "description": "Exact search on postcode",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "province_name",
+                    "description": "Exact search on province_name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uk_sic_2007",
+                    "description": "Exact search on uk_sic_2007",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "min_employees",
+                    "description": "minimum value for employees_total",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max_employees",
+                    "description": "maximum value for employees_total",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "min_annual_sales_local",
+                    "description": "minimum value for annual_sales_local",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max_annual_sales_local",
+                    "description": "maximum value for annual_sales_local",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "min_score",
+                    "description": "minimum value for amee_industry_score",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max_score",
+                    "description": "maximum value for amee_industry_score",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from_lat_lon",
+                    "description": "Latitude\/Longitude of a point to search around - must be used together with with distance param, e.g.: from_lat_lon=51.623,-0.0732 and distance=20",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "distance",
+                    "description": "Radius in KM to search from 'from_lat_lon' - e.g.: from_location=51.623,-0.0732 and distance=20",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stats",
+                    "description": "Returns a list of values at the end of the results for the following statistics, 'count', 'total', 'min', 'max', 'mean', 'sum_of_squares', 'variance' and 'std_deviation'. This works with any of the available numerical parameters",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f39eb3116964136c907633e5f062d902",
+            "rawModeData": ""
+        },
+        {
+            "id": "2b4b614009df73ee08ea36a6c2dad72f",
+            "name": "getCompanyById",
+            "url": "https:\/\/www.amee.com\/companies\/{id}",
+            "description": "Find company by AMEE company id or CRO number",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID of company that needs to be fetched, e.g. 000662801",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Type of company id to searching by.  Allowed values: 'amee', 'CRO'.  Defaults to 'amee'",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f39eb3116964136c907633e5f062d902",
+            "rawModeData": ""
+        },
+        {
+            "id": "45a5b74c256406aa4c79306d42327098",
+            "name": "getWriAqueduct",
+            "url": "https:\/\/www.amee.com\/wri_aqueduct",
+            "description": "Get WRI Aqueduct values and risk levels for a point on the earth",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "limit",
+                    "description": "Number of results per page, max 50, default 20",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page number of results, max 100, default 1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lat",
+                    "description": "Latitude, in degrees (WGS84)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lon",
+                    "description": "Longitude, in degrees (WGS84)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f39eb3116964136c907633e5f062d902",
+            "rawModeData": ""
+        },
+        {
+            "id": "4afdaafb3153ddd70b08398094f0b846",
+            "name": "getNdGain",
+            "url": "https:\/\/www.amee.com\/nd_gain",
+            "description": "List ND-Gain indices",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "limit",
+                    "description": "Number of results per page, max 50, default 20",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page number of results, max 100, default 1",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "iso3",
+                    "description": "ISO-3166-3 Country code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "iso2",
+                    "description": "ISO-3166-2 Country code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "year",
+                    "description": "Year, in YYYY",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "scope",
+                    "description": "Can be any one of the following values: readiness, indicators, vulnerability",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "category",
+                    "description": "Can be any one of the following values in NdGain",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f39eb3116964136c907633e5f062d902",
+            "rawModeData": ""
+        }
+    ]
+}
