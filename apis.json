@@ -9,15 +9,17 @@
         "cleantech",
         "cleanweb",
         "general data",
-        "have api"
+        "have api",
+        "have openapi",
+        "new"
     ],
-    "created": "2019-12-20",
-    "modified": "2019-12-20",
+    "created": "2019-12-25",
+    "modified": "2019-12-25",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/amee\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
         {
-            "name": "AMEE ND-Gain Indices API",
+            "name": "AMEE Data",
             "description": null,
             "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/335-amee-developers.jpg",
             "humanURL": "https:\/\/www.amee.com",
@@ -26,29 +28,23 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/amee\/master\/amee-ndgain-indices-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/zendesk\/master\/swagger-api-openapi.json"
                 },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/amee\/master\/amee-ndgain-indices-api-postman-collection.json"
-                }
-            ]
-        },
-        {
-            "name": "AMEE WRI Aqueduct API",
-            "description": null,
-            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/335-amee-developers.jpg",
-            "humanURL": "https:\/\/www.amee.com",
-            "baseURL": "",
-            "tags": [],
-            "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/amee\/master\/amee-wri-aqueduct-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/amee\/master\/swagger-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/swagger-api.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/amee\/master\/amee-wri-aqueduct-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/zendesk\/master\/swagger-api-postman-collection.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/amee\/master\/swagger-api-postman-collection.json"
                 }
             ]
         }
