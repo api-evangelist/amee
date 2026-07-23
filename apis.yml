@@ -1,7 +1,31 @@
 aid: amee
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amee.png
 name: AMEE
-description: AMEE is a company surfaced as a portfolio company of union-square-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  AMEE (Avoiding Mass Extinctions Engine, also styled Avoidance of Mass
+  Extinctions Engine) was a London-based environmental-intelligence company
+  founded around 2005 by Gavin Starks out of UK firm Dgen. It ran an open
+  web-service API and cloud database that standardized carbon-emissions and
+  energy-consumption data across 150+ countries, letting applications apply
+  government emission factors to tracked activities. AMEE powered carbon
+  calculators and footprinting for clients including Google, Morgan Stanley,
+  Radiohead, Sun Microsystems, and UK and Irish government programs (notably the
+  Act on CO2 campaign). It raised roughly $7.5M from Union Square Ventures, OATV
+  (O'Reilly AlphaTech Ventures), The Accelerator Group, and Amadeus Capital
+  Partners. AMEE was acquired by Pi (PredictX) in late 2015 / early 2016 and no
+  longer operates as an independent company; the amee.com domain currently
+  returns HTTP 502 with no live API or developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/amee/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +33,20 @@ x-backed-by:
 - union-square-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-detail: Acquired by Pi (PredictX) circa 2015-2016; amee.com returns HTTP 502, no live API surface as of 2026-07-17.
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Carbon
+- Emissions
+- Energy Data
+- Sustainability
+- Open Data
+- Environmental Intelligence
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +56,12 @@ maintainers:
 common:
 - type: Website
   url: https://amee.com
+- type: Wikipedia
+  url: https://en.wikipedia.org/wiki/Avoiding_Mass_Extinctions_Engine
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/amee
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
